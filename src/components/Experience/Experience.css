@@ -1,0 +1,83 @@
+/* Experience.css */
+.exp-list { display: flex; flex-direction: column; }
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  position: relative;
+}
+
+/* Left column — date / company */
+.exp-left {
+  padding: 0 32px 48px 0;
+  position: relative;
+}
+.exp-left::after {
+  content: '';
+  position: absolute;
+  right: -1px; top: 8px; bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+.exp-dot {
+  position: absolute;
+  right: -6px; top: 6px;
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg2);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+.exp-period   { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent2); letter-spacing: 0.05em; margin-bottom: 4px; }
+.exp-company  { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.exp-location { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); }
+
+/* Right column — role details */
+.exp-right { padding: 0 0 48px 32px; }
+
+.exp-title   { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.exp-desc    { font-size: 0.88rem; color: var(--muted); margin-bottom: 16px; line-height: 1.7; }
+
+.exp-bullets { list-style: none; margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+.exp-bullets li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.65;
+}
+.exp-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 2px;
+}
+
+.exp-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.exp-tag {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent3);
+}
+
+/* Remove bottom padding + connector line on last item */
+.exp-item:last-child .exp-left::after { display: none; }
+.exp-item:last-child .exp-left,
+.exp-item:last-child .exp-right { padding-bottom: 0; }
+
+@media (max-width: 900px) {
+  .exp-item { grid-template-columns: 1fr; }
+  .exp-left {
+    padding: 0 0 8px 24px;
+  }
+  .exp-left::after { left: 0; right: auto; top: 0; }
+  .exp-dot { left: -6px; right: auto; }
+  .exp-right { padding: 0 0 40px 24px; }
+}
