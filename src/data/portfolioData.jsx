@@ -21,10 +21,9 @@ export const META = {
 };
 
 export const HERO_TITLES = [
-  "Salesforce Administrator",
   "Data Analyst",
   "Tableau Hero",
-  "Salesforce Developer",
+  "Salesforce Admin",
 ];
 
 export const HERO_BADGES = ["Analytic Badass", "4+ Years SF", "3+ Tableau"];
@@ -32,23 +31,22 @@ export const HERO_BADGES = ["Analytic Badass", "4+ Years SF", "3+ Tableau"];
 export const ABOUT = {
   paragraphs: [
   <>
-    A <strong>results-driven Salesforce Administrator and Data Professional</strong> with
-    hands-on experience across the full data lifecycle — from management and
+    A <strong>results-driven Salesforce Analyst and well rounded Data Professional</strong> with
+    hands-on experience across the full data lifecycle — from data management and
     governance to analysis and reporting.
   </>,
   <>
-    Skilled across <strong>Sales Cloud, Service Cloud, NPSP, Pardot</strong>, with a
+    Skilled across <strong>Nonprofit Cloud, Sales Cloud, Service Cloud, NPSP</strong>, with a
     proven ability to translate complex business requirements into clean,
     scalable Salesforce solutions. Proficient in{" "}
     <strong>Flows, process automation, and data integrity practices</strong>{" "}
-    that keep organizations running efficiently from the ground up.
+    that keep organizations and programs running efficiently from the ground up.
   </>,
   <>
     What sets me apart is the ability to bridge the gap between{" "}
-    <strong>Salesforce administration and data work</strong> — not just
-    configuring the platform, but understanding the data that flows through it.
+    <strong> Analytics and data operations</strong> and translate that to tangible results for programs and fundraising teams. 
     From pipeline hygiene to actionable insights, I bring an{" "}
-    <strong>end-to-end perspective</strong> that most admins don't.
+    <strong>end-to-end perspective</strong> that most admins and analysts don't.
   </>,
 ],
   cards: [
@@ -91,7 +89,7 @@ export const SKILLS = [
   },
   {
     icon: "⚡",
-    title: "Salesforce Development",
+    title: "Salesforce Automation Ops",
     items: [
       "Record-Triggered Flows",
       "Scheduled Flows",
@@ -156,47 +154,33 @@ export const EXPERIENCE = [
     tags: ["Salesforce Administration", "Data Governance", "Tableau", "Process Automation"],
   },
   {
-    title: "CRM/Salesforce Administrator",
+    title: "CRM Data Administrator",
     company: "Bayview Hunters Point Foundation",
     period: "Feb 2023 - Dec 2023",
     location: "San Francisco, CA",
     desc: "Responsible to implementing a new CRM Apricot to track programs metrics while maintaining other Systems such as Salesforce.",
     bullets: [
-      "Built performance dashboards and custom reports with advanced filter logic to monitor program KPIs, fundraising benchmarks, and case outcomes.",
-      "Gathered business requirements from stakeholders across programs and fundraising, translating them into technical documentation and SOPs.",
-      "Cleaned and processed 20,000–150,000 donor and client records, improving data accuracy and automating mailing list generation.",
-      "Created standardized SOPs and process documentation in Microsoft 365 with version control in SharePoint.",
+      "Conducted systems analysis using SQL and Excel on internal case management data to surface process inefficiencies, translating findings into actionable insights that improved client retention and program outcomes for an underserved community.",
+      "Partnered with program managers, therapists, and leadership to gather requirements and translate them into data models and visualizations and reports enabling data-driven decisions in case management and service delivery.",
+      "Built customized reports and dashboards tracking fundraising goals, program outcomes, and case management KPIs using advanced filter logic and aggregate reporting, ensuring accurate and timely delivery to internal and external stakeholders. The result was live touchpoint tracking from homeless shelters and visualizing the demographics of served individuals. In addition to incoming donations tracking. ",
+      "Led modernization effort to enhance systems and processes by interviewing the end user collecting intake forms and program outcomes translating them into a spreadsheet to help model the data and relationships between departments and potential KPI indicators. ",
     ],
-    tags: ["Salesforce Administration", "Data Cleaning", "Reporting", "Documentation"],
+    tags: ["System Implementation", "Data Cleaning", "Reporting", "Documentation"],
   },
-  {
-    title: "Business Analyst",
-    company: "CSU East Bay",
-    period: "Aug 2022 - Feb 2023",
-    location: "Hayward, CA",
-    desc: "Responsible for generating reports, refining and enhancing Mysql quieries and refining campaigns and dollars given",
-    bullets: [
-        "Managed donor fundraising systems tracking over $50M in funds, ensuring data accuracy and integrity across reporting cycles.",
-        "Built and maintained donation collection websites, improving the user-facing giving experience for alumni and community donors.",
-        "Analyzed business processes across alumni, volunteer, and fundraising programs, identifying inefficiencies and recommending data-driven solutions.",
-        "Generated recurring reports and refined MySQL queries to support leadership decision-making on campaign performance and donor engagement.",
-        "Translated requirements from non-technical stakeholders into actionable system updates and documentation.",
-      ],
-      tags: ["Business Analysis", "MySQL", "Donor Management", "Fundraising Systems", "Web Development"],
-    },
+
   {
     title: "Salesforce Instructor & Analyst",
     company: "ClimbHire",
     period: "Aug 2020 - Feb 2023",
     location: "",
-    desc: "I have served both as a FTE and contract employee responsible for teaching new generations of salesforce proffessionals as well as produce my own analytices and metrice and present to CEO",
+    desc: "I have served both as a FTE and contract employee responsible for teaching new generations of salesforce proffessionals as well as manage my own program and produce my own analytices and metrics and present to CEO",
     bullets: [
-      "Developed Salesforce NPSP training materials and onboarding guides, improving user proficiency and reducing data entry errors across teams.",
-      "Built complex reports using row-level and aggregate formulas, and created dashboards to track fundraising KPIs.",
-      "Led UAT and troubleshooting for new features, collaborating cross-functionally to improve data-driven tools for fundraising and engagement.",
-      "Maintained Salesforce automations and integrations with Asana, Google Sheets, and Mailchimp, reducing manual updates and ensuring clean data flow.",
+      "Developed and delivered comprehensive training documentation to onboard new users and staff, emphasizing data fundamentals, processes, and Salesforce best practices, while also showcasing custom reporting techniques to enhance user proficiency and efficiency within the Salesforce ecosystem.",
+      "Applied advanced knowledge of data modeling and reporting to create complex reports using row-level and aggregate formulas, and built dashboards with various visualizations to support decision-making and track key performance indicators (KPIs). This resulted in live feed of program metrics into a dashboard that management was able to see to correlate mentor touchpoints with student success.",
+      "Conducted troubleshooting for new software by utilizing User Acceptance Testing (UAT) documents, collaborating with diverse internal users to identify bugs, enhance user documentation, and refine processes for improved software performance and user experience.",
+      "Collaborated with internal and external IT teams to gather user feedback and design innovative solutions, focusing on adhering to best practices, and quality techniques to deliver superior support and strengthen the fundraising capabilities for the team.",
     ],
-    tags: ["Salesforce NPSP", "Reporting", "Training", "Automation"],
+    tags: ["Salesforce", "Reporting", "Training", "Managing"],
   },
 
 ];
@@ -207,7 +191,7 @@ export const CERTIFICATIONS = {
     {
       icon: "📊",
       title: "Grants Pipeline & GAU Dashboard",
-      issuer: "Salesforce NPSP · Tableau"
+      issuer: "Salesforce · Tableau"
     },
     {
       icon: "💼",
